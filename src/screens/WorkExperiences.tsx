@@ -53,7 +53,7 @@ export const WorkExperiences = () => {
   }, []);
 
   return (
-    <Box id="workexperiences" sx={{ padding: '50px 0' }}>
+    <Box id="workexperiences">
       <Typography variant="h4" color="primary" gutterBottom>
         Work Experiences
       </Typography>
@@ -87,7 +87,7 @@ export const WorkExperiences = () => {
                 {/* Rol */}
                 <Typography 
                   variant="subtitle1" 
-                  color="secondary" 
+                  color="#fff" 
                   gutterBottom
                 >
                   {experience.role}
@@ -106,7 +106,7 @@ export const WorkExperiences = () => {
                 {/* Descripción */}
                 <Typography 
                   variant="body1" 
-                  color="textPrimary" 
+                  color="#fff" 
                   paragraph
                 >
                   {experience.description}

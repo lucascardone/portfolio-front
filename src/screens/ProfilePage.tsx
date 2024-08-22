@@ -15,7 +15,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ setGlobalTheme }) => {
 
   const handleColorsExtracted = (extractedColors: string[]) => {
     if (extractedColors.length > 0) {
-      const primaryColor = extractedColors[0];
+      const primaryColor = extractedColors[1];
       const newTheme = createTheme({
         palette: {
           mode: 'dark',
@@ -52,7 +52,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ setGlobalTheme }) => {
       <Box sx={{ flex: 1, textAlign: isSmallScreen ? 'center' : 'left', marginBottom: isSmallScreen ? '20px' : 0 }}>
         <Typography
           variant="h1"
-          color="primary"
+          color={ `${colors[1]} `}
           sx={{
             fontFamily: 'Quicksand, Arial, sans-serif',
             fontSize: isSmallScreen ? '60px' : isMediumScreen ? '100px' : '150px',
