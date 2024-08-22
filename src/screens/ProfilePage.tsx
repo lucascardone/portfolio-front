@@ -76,7 +76,7 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ setGlobalTheme }) => {
           Lucas Cardone - Developer
         </Typography>
       </Box>
-      <Box sx={{ flex: 0.4, textAlign: 'center' }}>
+      <Box sx={{ flex: 1, textAlign: 'center' }}>
         <img
           src={imageUrl}
           alt="GitHub Profile"
