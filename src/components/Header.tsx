@@ -10,10 +10,12 @@ interface Props {
 
 const drawerWidth = 240;
 const navItems = [
-  { name: 'About Me', path: '/about' },
-  { name: 'Work Experiences', path: '/work-experiences' },
-  { name: '+Info', path: '/info' },
-  { name: 'Contact Me', path: '/contact' },
+  { name: 'ABOUT ME', path: '/about' },
+  { name: 'WORK EXPERIENCES', path: '/work-experiences' },
+  { name: 'SKILLS', path: '/skills' },
+  { name: '+INFO', path: '/info' },
+  { name: 'CONTACT ME', path: '/contact' },
+
 ];
 
 // Estilización personalizada para el botón de Home (con iniciales o ícono)
@@ -65,7 +67,7 @@ export const Header = ({ window }: Props) => {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemButton sx={{ textAlign: 'left' }}>
               <ListItemText>
                 <RouterLink to={item.path} style={{ textDecoration: 'none', color: 'inherit' }}>
                   {item.name}

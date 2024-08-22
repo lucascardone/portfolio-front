@@ -55,7 +55,7 @@ export const WorkExperiences = () => {
   return (
     <Box id="workexperiences">
       <Typography variant="h4" color="primary" gutterBottom>
-        Work Experiences
+        WORK EXPERIENCES
       </Typography>
 
       <Grid container spacing={3}>

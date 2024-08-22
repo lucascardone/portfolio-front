@@ -33,9 +33,9 @@ export const AboutMe = () => {
       {/* Contenido del About Me */}
       <Box sx={{ marginLeft: '30px' }}> {/* Espacio para el rectángulo */}
         <Typography variant="h4" color="primary" gutterBottom>
-          About Me
+          ABOUT ME
         </Typography>
-        <Typography variant="body1" color="textSecondary">
+        <Typography variant="body1" color="textSecondary" sx={{ fontSize: '1.2em'}}>
           Aquí va una breve descripción sobre ti. Lorem Ipsum is simply dummy text of the printing and typesetting 
           industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
           printer took a galley of type and scrambled it to make a type specimen book. It has survived not only 
