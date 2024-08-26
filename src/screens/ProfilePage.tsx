@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { createTheme, Typography, Box, useMediaQuery } from '@mui/material';
-//@ts-ignore
-import { ColorExtractor } from 'react-color-extractor';
+import ColorThief from 'colorthief';
 
 interface ProfilePageProps {
   setGlobalTheme: React.Dispatch<React.SetStateAction<any>>;
@@ -12,6 +11,19 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ setGlobalTheme }) => {
   const imageUrl = 'https://avatars.githubusercontent.com/u/89162737?v=4'; 
   const isSmallScreen = useMediaQuery('(max-width:600px)');
   const isMediumScreen = useMediaQuery('(max-width:960px)');
+
+  useEffect(() => {
+    const img = new Image();
+    img.crossOrigin = 'Anonymous';
+    img.src = imageUrl;
+    img.onload = () => {
+      const colorThief = new ColorThief();
+      const extractedColors = colorThief.getPalette(img, 2).map((rgb) => {
+        return `rgb(${rgb.join(',')})`;
+      });
+      handleColorsExtracted(extractedColors);
+    };
+  }, []);
 
   const handleColorsExtracted = (extractedColors: string[]) => {
     if (extractedColors.length > 0) {
@@ -48,7 +60,6 @@ const ProfilePage: React.FC<ProfilePageProps> = ({ setGlobalTheme }) => {
         flexDirection: isSmallScreen ? 'column' : 'row',
       }}
     >
-      <ColorExtractor src={imageUrl} getColors={handleColorsExtracted} />
       <Box sx={{ flex: 1, textAlign: isSmallScreen ? 'center' : 'left', marginBottom: isSmallScreen ? '20px' : 0 }}>
         <Typography
           variant="h1"
