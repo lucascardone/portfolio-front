@@ -3,11 +3,11 @@ import { Box, Typography, Button, Tooltip } from '@mui/material';
 import { LinkedIn, GitHub, Email, Description } from '@mui/icons-material';
 
 export const ContactMe = () => {
-  const email = "tucorreo@example.com";
+  const email = "lucas.a.cardone@gmail.com";
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(email);
-    alert("Email copiado al portapapeles!");
+    alert("Email copied to clipboard!");
   };
 
   useEffect(() => {
@@ -46,7 +46,7 @@ export const ContactMe = () => {
         {/* LinkedIn */}
         <Button
           startIcon={<LinkedIn />}
-          href="https://www.linkedin.com/in/tuperfil"
+          href="https://www.linkedin.com/in/lucas-cardone/"
           target="_blank"
           sx={{ color: '#fff', '&:hover': { color: 'primary.main' } }}
         >
@@ -56,7 +56,7 @@ export const ContactMe = () => {
         {/* GitHub */}
         <Button
           startIcon={<GitHub />}
-          href="https://github.com/tuusuario"
+          href="https://github.com/lucascardone"
           target="_blank"
           sx={{ color: '#fff', '&:hover': { color: 'primary.main' } }}
         >
@@ -77,7 +77,7 @@ export const ContactMe = () => {
         {/* CV */}
         <Button
           startIcon={<Description />}
-          href="enlace-a-tu-cv"
+          href="../Lucas_Cardone.pdf"
           target="_blank"
           sx={{ color: '#fff', '&:hover': { color: 'primary.main' } }}
         >

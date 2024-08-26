@@ -19,10 +19,7 @@ export const MoreInfo = ({ theme }) => {
         </Typography>
         <List>
           <ListItem>
-            <ListItemText primary="Degree in Computer Science" secondary="University XYZ, 2016-2020" />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary="Advanced Programming Course" secondary="Tech Institute, 2021" />
+            <ListItemText primary="Technical Degree in Programming" secondary="Universidad Tecnologica Nacional (UTN), Jul 2022 - Jun 2024" />
           </ListItem>
         </List>
       </motion.div>
@@ -35,10 +32,10 @@ export const MoreInfo = ({ theme }) => {
         </Typography>
         <List>
           <ListItem>
-            <ListItemText primary="Spanish - Native" />
+            <ListItemText primary="Spanish" secondary="Native" />
           </ListItem>
           <ListItem>
-            <ListItemText primary="English - Fluent" />
+            <ListItemText primary="English" secondary="Writen: B1+, Oral: B2" />
           </ListItem>
         </List>
       </motion.div>
@@ -51,10 +48,10 @@ export const MoreInfo = ({ theme }) => {
         </Typography>
         <List>
           <ListItem>
-            <ListItemText primary="AWS Certified Developer" secondary="Issued by Amazon, 2022" />
+            <ListItemText primary="Full Stack Web Programming" secondary="Egg Cooperation, Sep 2021 - Oct 2022" />
           </ListItem>
           <ListItem>
-            <ListItemText primary="Scrum Master Certification" secondary="Issued by Scrum Alliance, 2023" />
+            <ListItemText primary="Oracle Next Education Program F2 T3" secondary="Alura Latam, Sep 2022 - Dec 2022" />
           </ListItem>
         </List>
       </motion.div>

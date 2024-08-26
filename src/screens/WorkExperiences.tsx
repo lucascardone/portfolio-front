@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Box, Typography, Card, CardContent, Chip, Stack, Grid } from '@mui/material';
 
 interface WorkExperience {
@@ -13,24 +13,43 @@ interface WorkExperience {
 const experiences: WorkExperience[] = [
   {
     title: "Software Developer",
-    company: "Tech Company",
-    role: "Frontend Developer",
-    period: "January 2020 - Present",
+    company: "Egg Cooperation",
+    role: "Mentor Experto",
+    period: "June 2023 - Present",
     description:
-      "Worked on building and maintaining web applications with a focus on creating responsive and user-friendly designs.",
-    technologies: ["React", "JavaScript", "CSS", "HTML", "Material-UI"],
+      "Guided students in large online networks, conducted tutorials on various programming topics, and designed a microservice that used AI to analyze and summarize student feedback.",
+    technologies: ["Java", "Springboot", "React", "AI", "Microservices", "Git", "GitHub"],
   },
   {
-    title: "Backend Engineer",
-    company: "Backend Solutions",
-    role: "Backend Developer",
-    period: "May 2018 - December 2019",
+    title: "Web Developer",
+    company: "Holmes",
+    role: "Fullstack Developer",
+    period: "June 2023 - July 2024",
     description:
-      "Developed APIs and managed server-side logic for various projects, ensuring optimal performance and security.",
-    technologies: ["Node.js", "Express", "MongoDB", "Docker"],
+      "Designed and developed a brewery reservation system, integrated third-party services, and expanded the system to multiple restaurants using React Native.",
+    technologies: ["React", "React Native", "Typescript", "JWT", "Google APIs", "MercadoPago", ".NET", "MySQL", "Git", "GitHub"],
+  },
+  {
+    title: "Web Developer",
+    company: "Puntos Club",
+    role: "Fullstack Developer",
+    period: "May 2024 - Present",
+    description:
+      "Worked on improving the UI of the website, fixing production issues, and using technologies like Symfony, Angular, and MySQL for development and maintenance.",
+    technologies: ["Symfony", "Angular", "PHP", "MySQL", "Git", "GitHub"],
+  },
+  {
+    title: "Desktop Application Developer",
+    company: "Audens",
+    role: "Java Developer",
+    period: "July 2022 - May 2023",
+    description:
+      "Developed a local-use application using Java and SQLite for managing payment receipts, implemented performance improvements, and adjusted the application based on user feedback.",
+    technologies: ["Java", "SQLite", "JSwing", "Git"],
   },
   // Puedes agregar más experiencias aquí
 ];
+
 
 export const WorkExperiences = () => {
   const [visible, setVisible] = useState<boolean[]>([]);
